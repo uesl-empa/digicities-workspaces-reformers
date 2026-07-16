@@ -1,0 +1,11 @@
+{
+  "id": "PriceForecasting_CERTH",
+  "name": "Price Forecasting (CERTH)",
+  "description": "Wholesale electricity-price forecasting models.",
+  "created": "2026-05-28",
+  "tags": [
+    "forecasting",
+    "price",
+    "CERTH"
+  ]
+}

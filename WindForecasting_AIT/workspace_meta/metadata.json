@@ -1,0 +1,11 @@
+{
+  "id": "WindForecasting_AIT",
+  "name": "Wind Forecasting (AIT)",
+  "description": "Short-term wind power forecasting models and supporting data.",
+  "created": "2026-05-28",
+  "tags": [
+    "forecasting",
+    "wind",
+    "AIT"
+  ]
+}

@@ -1,0 +1,10 @@
+PREFIX dici_onto: <https://digicities.info/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# All components in the replica with their type and label.
+SELECT ?instance ?type ?label WHERE {
+  ?instance a ?type ;
+            rdfs:label ?label .
+  ?type rdfs:subClassOf* dici_onto:Component .
+}
+ORDER BY ?type ?instance

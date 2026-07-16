@@ -1,0 +1,853 @@
+@prefix dici_onto: <https://digicities.info/ontology#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cur: <http://qudt.org/vocab/currency/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://digicities.info/proj/wind_forecasting_AIT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0> a dici_onto:WindTurbine ;
+	rdfs:label "alkmaar_2p3MW" ;
+	dici_onto:hasAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/ThrustCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Latitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Longitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Elevation>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RatedPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/CAPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/OPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RotorDiameter>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/HubHeight>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MaxOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MinOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/DefaultInitialActivePower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction> .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0> dici_onto:hasWindTurbineThrustCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/ThrustCurve>;
+	dici_onto:hasWindTurbineLatitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Latitude>;
+	dici_onto:hasWindTurbineLongitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Longitude>;
+	dici_onto:hasWindTurbineElevationAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Elevation>;
+	dici_onto:hasWindTurbineRatedPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RatedPower>;
+	dici_onto:hasWindTurbineCAPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/CAPEX>;
+	dici_onto:hasWindTurbineOPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/OPEX>;
+	dici_onto:hasWindTurbinePowerCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerCurve>;
+	dici_onto:hasWindTurbineRotorDiameterAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RotorDiameter>;
+	dici_onto:hasWindTurbineHubHeightAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/HubHeight>;
+	dici_onto:hasWindTurbineMaxOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MaxOperatingPower>;
+	dici_onto:hasWindTurbineMinOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MinOperatingPower>;
+	dici_onto:hasWindTurbineDefaultInitialActivePowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/DefaultInitialActivePower>;
+	dici_onto:hasWindTurbinePowerProductionAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction>.
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1> a dici_onto:WindTurbine ;
+	rdfs:label "alkmaar_2p3MW" ;
+	dici_onto:hasAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/ThrustCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Latitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Longitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Elevation>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RatedPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/CAPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/OPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RotorDiameter>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/HubHeight>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MaxOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MinOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/DefaultInitialActivePower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction> .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1> dici_onto:hasWindTurbineThrustCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/ThrustCurve>;
+	dici_onto:hasWindTurbineLatitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Latitude>;
+	dici_onto:hasWindTurbineLongitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Longitude>;
+	dici_onto:hasWindTurbineElevationAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Elevation>;
+	dici_onto:hasWindTurbineRatedPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RatedPower>;
+	dici_onto:hasWindTurbineCAPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/CAPEX>;
+	dici_onto:hasWindTurbineOPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/OPEX>;
+	dici_onto:hasWindTurbinePowerCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerCurve>;
+	dici_onto:hasWindTurbineRotorDiameterAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RotorDiameter>;
+	dici_onto:hasWindTurbineHubHeightAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/HubHeight>;
+	dici_onto:hasWindTurbineMaxOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MaxOperatingPower>;
+	dici_onto:hasWindTurbineMinOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MinOperatingPower>;
+	dici_onto:hasWindTurbineDefaultInitialActivePowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/DefaultInitialActivePower>;
+	dici_onto:hasWindTurbinePowerProductionAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction>.
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2> a dici_onto:WindTurbine ;
+	rdfs:label "alkmaar_2p3MW" ;
+	dici_onto:hasAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/ThrustCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Latitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Longitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Elevation>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RatedPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/CAPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/OPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RotorDiameter>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/HubHeight>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MaxOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MinOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/DefaultInitialActivePower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction> .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2> dici_onto:hasWindTurbineThrustCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/ThrustCurve>;
+	dici_onto:hasWindTurbineLatitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Latitude>;
+	dici_onto:hasWindTurbineLongitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Longitude>;
+	dici_onto:hasWindTurbineElevationAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Elevation>;
+	dici_onto:hasWindTurbineRatedPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RatedPower>;
+	dici_onto:hasWindTurbineCAPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/CAPEX>;
+	dici_onto:hasWindTurbineOPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/OPEX>;
+	dici_onto:hasWindTurbinePowerCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerCurve>;
+	dici_onto:hasWindTurbineRotorDiameterAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RotorDiameter>;
+	dici_onto:hasWindTurbineHubHeightAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/HubHeight>;
+	dici_onto:hasWindTurbineMaxOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MaxOperatingPower>;
+	dici_onto:hasWindTurbineMinOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MinOperatingPower>;
+	dici_onto:hasWindTurbineDefaultInitialActivePowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/DefaultInitialActivePower>;
+	dici_onto:hasWindTurbinePowerProductionAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction>.
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3> a dici_onto:WindTurbine ;
+	rdfs:label "enercon_E66_2p0MW" ;
+	dici_onto:hasAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/ThrustCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Latitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Longitude>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Elevation>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RatedPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/CAPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/OPEX>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerCurve>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RotorDiameter>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/HubHeight>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MaxOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MinOperatingPower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/DefaultInitialActivePower>,
+	<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction> .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3> dici_onto:hasWindTurbineThrustCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/ThrustCurve>;
+	dici_onto:hasWindTurbineLatitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Latitude>;
+	dici_onto:hasWindTurbineLongitudeAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Longitude>;
+	dici_onto:hasWindTurbineElevationAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Elevation>;
+	dici_onto:hasWindTurbineRatedPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RatedPower>;
+	dici_onto:hasWindTurbineCAPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/CAPEX>;
+	dici_onto:hasWindTurbineOPEXAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/OPEX>;
+	dici_onto:hasWindTurbinePowerCurveAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerCurve>;
+	dici_onto:hasWindTurbineRotorDiameterAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RotorDiameter>;
+	dici_onto:hasWindTurbineHubHeightAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/HubHeight>;
+	dici_onto:hasWindTurbineMaxOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MaxOperatingPower>;
+	dici_onto:hasWindTurbineMinOperatingPowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MinOperatingPower>;
+	dici_onto:hasWindTurbineDefaultInitialActivePowerAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/DefaultInitialActivePower>;
+	dici_onto:hasWindTurbinePowerProductionAttribute <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction>.
+
+<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar> a dici_onto:GlobalWindAtlasSite ;
+	rdfs:label "Wind Park Alkmaar" ;
+	dici_onto:hasAttribute <https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Roughness>,
+	<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Irradiance> .
+
+<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar> dici_onto:hasGlobalWindAtlasSiteRoughnessAttribute <https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Roughness>;
+	dici_onto:hasGlobalWindAtlasSiteIrradianceAttribute <https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Irradiance>.
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/ThrustCurve> a dici_onto:ThrustCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:N ;
+	dici_onto:yUnitLabel "N"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,       0.78]
+    [     3.0,       0.78]
+    [     4.0,       0.77]
+    [     5.0,       0.78]
+    [     6.0,       0.78]
+    [     7.0,       0.78]
+    [     8.0,       0.77]
+    [     9.0,       0.77]
+    [    10.0,       0.77]
+    [    11.0,       0.77]
+    [    12.0,       0.61]
+    [    13.0,       0.43]
+    [    14.0,       0.33]
+    [    15.0,       0.27]
+    [    16.0,       0.22]
+    [    17.0,       0.18]
+    [    18.0,       0.15]
+    [    19.0,       0.13]
+    [    20.0,       0.11]
+    [    21.0,        0.1]
+    [    22.0,       0.08]
+    [    23.0,       0.07]
+    [    24.0,       0.07]
+    [    25.0,       0.06]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Latitude> a dici_onto:Latitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "52.592999"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Longitude> a dici_onto:Longitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "4.752301"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/Elevation> a dici_onto:Elevation ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "5.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RatedPower> a dici_onto:RatedPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/CAPEX> a dici_onto:CAPEX ;
+	a dici_onto:SimpleCostAttribute ;
+	qudt:value "5000000.0"^^xsd:decimal ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/OPEX> a dici_onto:OPEX ;
+	a dici_onto:UnitBasedCostAttribute ;
+	qudt:value "10000.0"^^xsd:decimal ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerCurve> a dici_onto:PowerCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:W ;
+	dici_onto:yUnitLabel "W"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,     3000.0]
+    [     3.0,    25000.0]
+    [     4.0,    82000.0]
+    [     5.0,   174000.0]
+    [     6.0,   321000.0]
+    [     7.0,   532000.0]
+    [     8.0,   815000.0]
+    [     9.0,  1180000.0]
+    [    10.0,  1580000.0]
+    [    11.0,  1890000.0]
+    [    12.0,  2100000.0]
+    [    13.0,  2250000.0]
+    [    14.0,  2350000.0]
+    [    15.0,  2350000.0]
+    [    16.0,  2350000.0]
+    [    17.0,  2350000.0]
+    [    18.0,  2350000.0]
+    [    19.0,  2350000.0]
+    [    20.0,  2350000.0]
+    [    21.0,  2350000.0]
+    [    22.0,  2350000.0]
+    [    23.0,  2350000.0]
+    [    24.0,  2350000.0]
+    [    25.0,  2350000.0]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/RotorDiameter> a dici_onto:RotorDiameter ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "82.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/HubHeight> a dici_onto:HubHeight ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "85.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MaxOperatingPower> a dici_onto:MaxOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/MinOperatingPower> a dici_onto:MinOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.09"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/DefaultInitialActivePower> a dici_onto:DefaultInitialActivePower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.9"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction> a dici_onto:PowerProduction ;
+	a dici_onto:DynamicAttribute ;
+	dici_onto:hasHistoricTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_historic/ts> ;
+	dici_onto:hasHistoricTimeSeriesReference "turbine0_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFutureTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_future/ts> ;
+	dici_onto:hasFutureTimeSeriesReference "turbine0_power_projection.csv"^^xsd:string ;
+	dici_onto:hasLiveTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_live/ts> ;
+	dici_onto:hasLiveTimeSeriesReference "api.teleport.withthegrid.com.turbine0.power"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_historic/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine0_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine0_power_historic.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_future/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine0_power_projection.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine0_power_projection.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine0/PowerProduction_live/ts> a dici_onto:TimeSeries ;
+	dici_onto:realTimeSource "api.teleport.withthegrid.com.turbine0.power"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/ThrustCurve> a dici_onto:ThrustCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:N ;
+	dici_onto:yUnitLabel "N"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,       0.78]
+    [     3.0,       0.78]
+    [     4.0,       0.77]
+    [     5.0,       0.78]
+    [     6.0,       0.78]
+    [     7.0,       0.78]
+    [     8.0,       0.77]
+    [     9.0,       0.77]
+    [    10.0,       0.77]
+    [    11.0,       0.77]
+    [    12.0,       0.61]
+    [    13.0,       0.43]
+    [    14.0,       0.33]
+    [    15.0,       0.27]
+    [    16.0,       0.22]
+    [    17.0,       0.18]
+    [    18.0,       0.15]
+    [    19.0,       0.13]
+    [    20.0,       0.11]
+    [    21.0,        0.1]
+    [    22.0,       0.08]
+    [    23.0,       0.07]
+    [    24.0,       0.07]
+    [    25.0,       0.06]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Latitude> a dici_onto:Latitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "52.595889"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Longitude> a dici_onto:Longitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "4.753783"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/Elevation> a dici_onto:Elevation ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "5.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RatedPower> a dici_onto:RatedPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/CAPEX> a dici_onto:CAPEX ;
+	a dici_onto:SimpleCostAttribute ;
+	qudt:value "5000000.0"^^xsd:decimal ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/OPEX> a dici_onto:OPEX ;
+	a dici_onto:UnitBasedCostAttribute ;
+	qudt:value "10000.0"^^xsd:decimal ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerCurve> a dici_onto:PowerCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:W ;
+	dici_onto:yUnitLabel "W"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,     3000.0]
+    [     3.0,    25000.0]
+    [     4.0,    82000.0]
+    [     5.0,   174000.0]
+    [     6.0,   321000.0]
+    [     7.0,   532000.0]
+    [     8.0,   815000.0]
+    [     9.0,  1180000.0]
+    [    10.0,  1580000.0]
+    [    11.0,  1890000.0]
+    [    12.0,  2100000.0]
+    [    13.0,  2250000.0]
+    [    14.0,  2350000.0]
+    [    15.0,  2350000.0]
+    [    16.0,  2350000.0]
+    [    17.0,  2350000.0]
+    [    18.0,  2350000.0]
+    [    19.0,  2350000.0]
+    [    20.0,  2350000.0]
+    [    21.0,  2350000.0]
+    [    22.0,  2350000.0]
+    [    23.0,  2350000.0]
+    [    24.0,  2350000.0]
+    [    25.0,  2350000.0]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/RotorDiameter> a dici_onto:RotorDiameter ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "82.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/HubHeight> a dici_onto:HubHeight ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "85.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MaxOperatingPower> a dici_onto:MaxOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/MinOperatingPower> a dici_onto:MinOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.09"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/DefaultInitialActivePower> a dici_onto:DefaultInitialActivePower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.9"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction> a dici_onto:PowerProduction ;
+	a dici_onto:DynamicAttribute ;
+	dici_onto:hasHistoricTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_historic/ts> ;
+	dici_onto:hasHistoricTimeSeriesReference "turbine1_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFutureTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_future/ts> ;
+	dici_onto:hasFutureTimeSeriesReference "turbine1_power_projection.csv"^^xsd:string ;
+	dici_onto:hasLiveTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_live/ts> ;
+	dici_onto:hasLiveTimeSeriesReference "api.teleport.withthegrid.com.turbine1.power"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_historic/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine1_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine1_power_historic.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_future/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine1_power_projection.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine1_power_projection.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine1/PowerProduction_live/ts> a dici_onto:TimeSeries ;
+	dici_onto:realTimeSource "api.teleport.withthegrid.com.turbine1.power"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/ThrustCurve> a dici_onto:ThrustCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:N ;
+	dici_onto:yUnitLabel "N"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,       0.78]
+    [     3.0,       0.78]
+    [     4.0,       0.77]
+    [     5.0,       0.78]
+    [     6.0,       0.78]
+    [     7.0,       0.78]
+    [     8.0,       0.77]
+    [     9.0,       0.77]
+    [    10.0,       0.77]
+    [    11.0,       0.77]
+    [    12.0,       0.61]
+    [    13.0,       0.43]
+    [    14.0,       0.33]
+    [    15.0,       0.27]
+    [    16.0,       0.22]
+    [    17.0,       0.18]
+    [    18.0,       0.15]
+    [    19.0,       0.13]
+    [    20.0,       0.11]
+    [    21.0,        0.1]
+    [    22.0,       0.08]
+    [    23.0,       0.07]
+    [    24.0,       0.07]
+    [    25.0,       0.06]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Latitude> a dici_onto:Latitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "52.602287"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Longitude> a dici_onto:Longitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "4.757099"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/Elevation> a dici_onto:Elevation ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "5.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RatedPower> a dici_onto:RatedPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/CAPEX> a dici_onto:CAPEX ;
+	a dici_onto:SimpleCostAttribute ;
+	qudt:value "5000000.0"^^xsd:decimal ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/OPEX> a dici_onto:OPEX ;
+	a dici_onto:UnitBasedCostAttribute ;
+	qudt:value "10000.0"^^xsd:decimal ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerCurve> a dici_onto:PowerCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:W ;
+	dici_onto:yUnitLabel "W"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     2.0,     3000.0]
+    [     3.0,    25000.0]
+    [     4.0,    82000.0]
+    [     5.0,   174000.0]
+    [     6.0,   321000.0]
+    [     7.0,   532000.0]
+    [     8.0,   815000.0]
+    [     9.0,  1180000.0]
+    [    10.0,  1580000.0]
+    [    11.0,  1890000.0]
+    [    12.0,  2100000.0]
+    [    13.0,  2250000.0]
+    [    14.0,  2350000.0]
+    [    15.0,  2350000.0]
+    [    16.0,  2350000.0]
+    [    17.0,  2350000.0]
+    [    18.0,  2350000.0]
+    [    19.0,  2350000.0]
+    [    20.0,  2350000.0]
+    [    21.0,  2350000.0]
+    [    22.0,  2350000.0]
+    [    23.0,  2350000.0]
+    [    24.0,  2350000.0]
+    [    25.0,  2350000.0]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/RotorDiameter> a dici_onto:RotorDiameter ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "82.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/HubHeight> a dici_onto:HubHeight ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "85.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MaxOperatingPower> a dici_onto:MaxOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "3.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/MinOperatingPower> a dici_onto:MinOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.09"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/DefaultInitialActivePower> a dici_onto:DefaultInitialActivePower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.9"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction> a dici_onto:PowerProduction ;
+	a dici_onto:DynamicAttribute ;
+	dici_onto:hasHistoricTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_historic/ts> ;
+	dici_onto:hasHistoricTimeSeriesReference "turbine2_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFutureTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_future/ts> ;
+	dici_onto:hasFutureTimeSeriesReference "turbine2_power_projection.csv"^^xsd:string ;
+	dici_onto:hasLiveTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_live/ts> ;
+	dici_onto:hasLiveTimeSeriesReference "api.teleport.withthegrid.com.turbine2.power"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_historic/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine2_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine2_power_historic.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_future/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine2_power_projection.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine2_power_projection.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine2/PowerProduction_live/ts> a dici_onto:TimeSeries ;
+	dici_onto:realTimeSource "api.teleport.withthegrid.com.turbine2.power"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/ThrustCurve> a dici_onto:ThrustCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:N ;
+	dici_onto:yUnitLabel "N"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,      0.838]
+    [     1.5,      0.838]
+    [     2.0,      0.838]
+    [     2.5,      0.838]
+    [     3.0,      0.838]
+    [     3.5,      0.838]
+    [     4.0,      0.838]
+    [     4.5,      0.819]
+    [     5.0,      0.808]
+    [     5.5,      0.804]
+    [     6.0,      0.804]
+    [     6.5,      0.807]
+    [     7.0,      0.807]
+    [     7.5,      0.801]
+    [     8.0,      0.784]
+    [     8.5,      0.755]
+    [     9.0,      0.717]
+    [     9.5,      0.672]
+    [    10.0,      0.618]
+    [    10.5,      0.552]
+    [    11.0,      0.483]
+    [    11.5,      0.414]
+    [    12.0,      0.357]
+    [    12.5,       0.31]
+    [    13.0,      0.272]
+    [    13.5,       0.24]
+    [    14.0,      0.214]
+    [    14.5,      0.191]
+    [    15.0,      0.172]
+    [    15.5,      0.156]
+    [    16.0,      0.141]
+    [    16.5,      0.129]
+    [    17.0,      0.118]
+    [    17.5,      0.108]
+    [    18.0,      0.099]
+    [    18.5,      0.091]
+    [    19.0,      0.085]
+    [    19.5,      0.079]
+    [    20.0,      0.073]
+    [    20.5,      0.068]
+    [    21.0,      0.064]
+    [    21.5,       0.06]
+    [    22.0,      0.056]
+    [    22.5,      0.052]
+    [    23.0,      0.049]
+    [    23.5,      0.046]
+    [    24.0,      0.044]
+    [    24.5,      0.041]
+    [    25.0,      0.039]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Latitude> a dici_onto:Latitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "52.605192"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Longitude> a dici_onto:Longitude ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/DEG> ;
+	dici_onto:hasUnitLabel "DEG"^^xsd:string ;
+	qudt:value "4.758576"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/Elevation> a dici_onto:Elevation ;
+	a dici_onto:GeospatialAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "2.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RatedPower> a dici_onto:RatedPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "1.5"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/CAPEX> a dici_onto:CAPEX ;
+	a dici_onto:SimpleCostAttribute ;
+	qudt:value "5000000.0"^^xsd:decimal ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/OPEX> a dici_onto:OPEX ;
+	a dici_onto:UnitBasedCostAttribute ;
+	qudt:value "10000.0"^^xsd:decimal ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	dici_onto:currency cur:EUR .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerCurve> a dici_onto:PowerCurve ;
+	a dici_onto:CurveAttribute ;
+	dici_onto:xUnit unit:M-PER-SEC ;
+	dici_onto:xUnitLabel "M-PER-SEC"^^xsd:string ;
+	dici_onto:yUnit unit:W ;
+	dici_onto:yUnitLabel "W"^^xsd:string ;
+	dici_onto:hasDataPoints """[
+    [     1.0,        0.0]
+    [     1.5,     2000.0]
+    [     2.0,     4000.0]
+    [     2.5,     6000.0]
+    [     3.0,     8000.0]
+    [     3.5,    23000.0]
+    [     4.0,    48000.0]
+    [     4.5,    69000.0]
+    [     5.0,   104000.0]
+    [     5.5,   142000.0]
+    [     6.0,   200000.0]
+    [     6.5,   260000.0]
+    [     7.0,   340000.0]
+    [     7.5,   416000.0]
+    [     8.0,   515000.0]
+    [     8.5,   619000.0]
+    [     9.0,   748000.0]
+    [     9.5,   875000.0]
+    [    10.0,  1025000.0]
+    [    10.5,  1177000.0]
+    [    11.0,  1348000.0]
+    [    11.5,  1545000.0]
+    [    12.0,  1700000.0]
+    [    12.5,  1802000.0]
+    [    13.0,  1853000.0]
+    [    13.5,  1946000.0]
+    [    14.0,  2000000.0]
+    [    14.5,  2000000.0]
+    [    15.0,  2000000.0]
+    [    15.5,  2000000.0]
+    [    16.0,  2000000.0]
+    [    16.5,  2000000.0]
+    [    17.0,  2000000.0]
+    [    17.5,  2000000.0]
+    [    18.0,  2000000.0]
+    [    18.5,  2000000.0]
+    [    19.0,  2000000.0]
+    [    19.5,  2000000.0]
+    [    20.0,  2000000.0]
+    [    20.5,  2000000.0]
+    [    21.0,  2000000.0]
+    [    21.5,  2000000.0]
+    [    22.0,  2000000.0]
+    [    22.5,  2000000.0]
+    [    23.0,  2000000.0]
+    [    23.5,  2000000.0]
+    [    24.0,  2000000.0]
+    [    24.5,  2000000.0]
+    [    25.0,  2000000.0]
+    ]""" .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/RotorDiameter> a dici_onto:RotorDiameter ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "70.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/HubHeight> a dici_onto:HubHeight ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/M> ;
+	dici_onto:hasUnitLabel "M"^^xsd:string ;
+	qudt:value "98.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MaxOperatingPower> a dici_onto:MaxOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "1.5"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/MinOperatingPower> a dici_onto:MinOperatingPower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.045"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/DefaultInitialActivePower> a dici_onto:DefaultInitialActivePower ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string ;
+	qudt:value "0.45"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction> a dici_onto:PowerProduction ;
+	a dici_onto:DynamicAttribute ;
+	dici_onto:hasHistoricTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_historic/ts> ;
+	dici_onto:hasHistoricTimeSeriesReference "turbine3_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFutureTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_future/ts> ;
+	dici_onto:hasFutureTimeSeriesReference "turbine3_power_projection.csv"^^xsd:string ;
+	dici_onto:hasLiveTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_live/ts> ;
+	dici_onto:hasLiveTimeSeriesReference "api.teleport.withthegrid.com.turbine3.power"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_historic/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine3_power_historic.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine3_power_historic.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_future/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "turbine3_power_projection.csv"^^xsd:string ;
+	dici_onto:hasFileName "turbine3_power_projection.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/WindTurbine/Turbine3/PowerProduction_live/ts> a dici_onto:TimeSeries ;
+	dici_onto:realTimeSource "api.teleport.withthegrid.com.turbine3.power"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/MegaW> ;
+	dici_onto:hasUnitLabel "MegaW"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Roughness> a dici_onto:Roughness ;
+	a dici_onto:PhysicalAttribute ;
+	qudt:unit <http://qudt.org/vocab/unit/ONE> ;
+	dici_onto:hasUnitLabel "ONE"^^xsd:string ;
+	qudt:value "1.0"^^xsd:decimal .
+
+<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Irradiance> a dici_onto:Irradiance ;
+	a dici_onto:DynamicAttribute ;
+	dici_onto:hasHistoricTimeSeries <https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Irradiance_historic/ts> ;
+	dici_onto:hasHistoricTimeSeriesReference "alkmaar_irradiance.csv"^^xsd:string .
+
+<https://digicities.info/proj/wind_forecasting_AIT/GlobalWindAtlasSite/WindparkAlkmaar/Irradiance_historic/ts> a dici_onto:TimeSeries ;
+	dici_onto:storedAt "alkmaar_irradiance.csv"^^xsd:string ;
+	dici_onto:hasFileName "alkmaar_irradiance.csv"^^xsd:string ;
+	qudt:unit <http://qudt.org/vocab/unit/W-M2> ;
+	dici_onto:hasUnitLabel "W-M2"^^xsd:string .

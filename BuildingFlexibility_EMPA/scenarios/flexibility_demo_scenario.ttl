@@ -1,0 +1,74 @@
+# Building Flexibility (EMPA) — demo scenario for the flexibility optimizer.
+#
+# Self-contained: Scenario -> Location -> Building (via ComponentLink nodes) plus
+# the building's attributes. This is what the API Submission "convert" step reads
+# and what gets sent to the flexibility optimizer. Values are chosen to solve to
+# an optimal result (mirroring the optimizer's reference building).
+@prefix dici_onto: <https://digicities.info/ontology#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexibilityDemo> a dici_onto:Scenario ;
+    rdfs:label "Flexibility Demo" ;
+    dici_onto:builtForService "FlexibilityOptimizer" ;
+    dici_onto:createdInWorkspace "BuildingFlexibility_EMPA" .
+
+# --- Location (carries the weather location used for static weather) ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus> a dici_onto:Location ;
+    rdfs:label "EMPA Campus" ;
+    dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> ;
+    dici_onto:hasLocationWeatherEPWAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> a dici_onto:WeatherEPW, dici_onto:PhysicalAttribute, dici_onto:DynamicAttribute ;
+    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" ;
+    qudt:value "fribourg" .
+
+# --- Building 100001 with the optimizer's required attributes ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001> a dici_onto:Building ;
+    rdfs:label "Demo Flexible Building" ;
+    dici_onto:hasAttribute
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/GroundFloorArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/FootprintArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PeakSpaceHeatingPower>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatCapacity>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatResistance>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PVRoofCoverageRatio>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/EVCount>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/OptimizationMonths>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/ElectricityTariff> ;
+    dici_onto:hasBuildingGroundFloorAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/GroundFloorArea> ;
+    dici_onto:hasBuildingFootprintAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/FootprintArea> ;
+    dici_onto:hasBuildingPeakSpaceHeatingPowerAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PeakSpaceHeatingPower> ;
+    dici_onto:hasBuildingLumpedHeatCapacityAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatCapacity> ;
+    dici_onto:hasBuildingLumpedHeatResistanceAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatResistance> ;
+    dici_onto:hasBuildingPVRoofCoverageRatioAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PVRoofCoverageRatio> ;
+    dici_onto:hasBuildingEVCountAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/EVCount> ;
+    dici_onto:hasBuildingOptimizationMonthsAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/OptimizationMonths> ;
+    dici_onto:hasBuildingElectricityTariffAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/ElectricityTariff> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/GroundFloorArea> a dici_onto:GroundFloorArea, dici_onto:PhysicalAttribute ;
+    qudt:value "200.0"^^xsd:decimal ; qudt:unit unit:M2 .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/FootprintArea> a dici_onto:FootprintArea, dici_onto:PhysicalAttribute ;
+    qudt:value "60.0"^^xsd:decimal ; qudt:unit unit:M2 .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PeakSpaceHeatingPower> a dici_onto:PeakSpaceHeatingPower, dici_onto:PhysicalAttribute ;
+    qudt:value "10.0"^^xsd:decimal ; qudt:unit unit:KiloW .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatCapacity> a dici_onto:LumpedHeatCapacity, dici_onto:PhysicalAttribute ;
+    qudt:value "50.0"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatResistance> a dici_onto:LumpedHeatResistance, dici_onto:PhysicalAttribute ;
+    qudt:value "0.5"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/PVRoofCoverageRatio> a dici_onto:PVRoofCoverageRatio, dici_onto:PhysicalAttribute ;
+    qudt:value "0.3"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/EVCount> a dici_onto:EVCount, dici_onto:PhysicalAttribute ;
+    qudt:value "1"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/OptimizationMonths> a dici_onto:OptimizationMonths, dici_onto:PhysicalAttribute ;
+    qudt:value "2"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/ElectricityTariff> a dici_onto:ElectricityTariff, dici_onto:CategoricalAttribute, dici_onto:Flat .
+
+# --- Component links: Scenario -> Location -> Building ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexibilityDemo/ComponentLink_1> a dici_onto:ComponentLink ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexibilityDemo> ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus> .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexibilityDemo/ComponentLink_2> a dici_onto:ComponentLink ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus> ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001> .

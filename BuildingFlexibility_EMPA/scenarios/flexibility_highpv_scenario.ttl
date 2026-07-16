@@ -1,0 +1,92 @@
+# Building Flexibility (EMPA) - what-if scenario 'Flexibility - High PV and EVs' for Building 100001.
+# Self-contained and consistent with Scenario Builder output (usedInScenario,
+# sourceType, linkType). Instances are namespaced under the scenario URI so
+# multiple what-if value sets coexist in <http://scenarios> without colliding.
+@prefix dici_onto: <https://digicities.info/ontology#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> a dici_onto:Scenario ;
+    rdfs:label "Flexibility - High PV and EVs" ;
+    dcterms:description "Building 100001 with a large rooftop PV share and five EVs on a variable tariff." ;
+    dici_onto:builtForService "FlexibilityOptimizer" ;
+    dici_onto:createdInWorkspace "BuildingFlexibility_EMPA" .
+
+# --- Location (static weather location) ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus> a dici_onto:Location ;
+    rdfs:label "EMPA Campus" ;
+    dici_onto:sourceType "scenario" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus/WeatherEPW> ;
+    dici_onto:hasLocationWeatherEPWAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus/WeatherEPW> .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:WeatherEPW, dici_onto:PhysicalAttribute, dici_onto:DynamicAttribute ;
+    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "fribourg" .
+
+# --- Building 100001 ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001> a dici_onto:Building ;
+    rdfs:label "Building 100001" ;
+    dici_onto:sourceType "scenario" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    dici_onto:hasAttribute
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/GroundFloorArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/FootprintArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PeakSpaceHeatingPower>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatCapacity>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatResistance>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PVRoofCoverageRatio>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/EVCount>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/OptimizationMonths>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/ElectricityTariff> ;
+    dici_onto:hasBuildingGroundFloorAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/GroundFloorArea> ;
+    dici_onto:hasBuildingFootprintAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/FootprintArea> ;
+    dici_onto:hasBuildingPeakSpaceHeatingPowerAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PeakSpaceHeatingPower> ;
+    dici_onto:hasBuildingLumpedHeatCapacityAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatCapacity> ;
+    dici_onto:hasBuildingLumpedHeatResistanceAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatResistance> ;
+    dici_onto:hasBuildingPVRoofCoverageRatioAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PVRoofCoverageRatio> ;
+    dici_onto:hasBuildingEVCountAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/EVCount> ;
+    dici_onto:hasBuildingOptimizationMonthsAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/OptimizationMonths> ;
+    dici_onto:hasBuildingElectricityTariffAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/ElectricityTariff> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/GroundFloorArea> a dici_onto:GroundFloorArea, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "200.0"^^xsd:decimal ; qudt:unit unit:M2 .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/FootprintArea> a dici_onto:FootprintArea, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "60.0"^^xsd:decimal ; qudt:unit unit:M2 .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PeakSpaceHeatingPower> a dici_onto:PeakSpaceHeatingPower, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "10.0"^^xsd:decimal ; qudt:unit unit:KiloW .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatCapacity> a dici_onto:LumpedHeatCapacity, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "50.0"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/LumpedHeatResistance> a dici_onto:LumpedHeatResistance, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "0.5"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/PVRoofCoverageRatio> a dici_onto:PVRoofCoverageRatio, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "0.8"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/EVCount> a dici_onto:EVCount, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "5"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/OptimizationMonths> a dici_onto:OptimizationMonths, dici_onto:PhysicalAttribute ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    qudt:value "2"^^xsd:decimal .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001/ElectricityTariff> a dici_onto:ElectricityTariff, dici_onto:CategoricalAttribute, dici_onto:Variable ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> .
+
+# --- Component links: Scenario -> Location -> Building ---
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/ComponentLink_1> a dici_onto:ComponentLink ;
+    dici_onto:linkType "scenario_automatic" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus> .
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/ComponentLink_2> a dici_onto:ComponentLink ;
+    dici_onto:linkType "scenario_automatic" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus> ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Building/100001> .

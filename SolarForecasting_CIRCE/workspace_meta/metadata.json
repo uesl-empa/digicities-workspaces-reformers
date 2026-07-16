@@ -1,0 +1,11 @@
+{
+  "id": "SolarForecasting_CIRCE",
+  "name": "Solar Forecasting (CIRCE)",
+  "description": "Short-term PV generation forecasting models and supporting data.",
+  "created": "2026-05-28",
+  "tags": [
+    "forecasting",
+    "solar",
+    "CIRCE"
+  ]
+}

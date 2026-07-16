@@ -1,0 +1,11 @@
+{
+  "id": "HeilooControl_TUD",
+  "name": "Heiloo Control (TU Delft)",
+  "description": "Control strategies for the Heiloo (NL) demonstrator site.",
+  "created": "2026-05-28",
+  "tags": [
+    "control",
+    "demonstrator",
+    "TUD"
+  ]
+}

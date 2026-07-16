@@ -1,0 +1,80 @@
+# Building Flexibility (EMPA) — ontology extension
+#
+# Building attributes required by the REFORMERS flexibility optimizer. Each is a
+# building-scoped attribute (subClassOf BuildingAttribute) of an appropriate kind.
+# ElectricityTariff is categorical with its allowed values. BuildingAttribute,
+# GroundFloorArea and the Location weather attribute (WeatherEPW) are declared here
+# too: they are use-case vocabulary, so they live in the extension rather than core.
+@prefix dici_onto: <https://digicities.info/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Building is the component this use-case models. The core ontology doesn't define
+# it, so declare it here as a Component subclass — otherwise it doesn't show up in
+# the Digital Replica Explorer / Scenario Builder (which list Component subtypes).
+dici_onto:Building a owl:Class ;
+    rdfs:subClassOf dici_onto:Component ;
+    rdfs:label "Building" .
+
+# Category for attributes that describe a Building. The flex attributes below hang
+# off it; promote to core if it recurs across workpackages (extension model).
+dici_onto:BuildingAttribute a owl:Class ;
+    rdfs:subClassOf dici_onto:Attribute ;
+    rdfs:label "Building Attribute" .
+
+# Floor area of the building (the optimizer's floor_area). Referenced by the flex
+# template as Building.GroundFloorArea.
+dici_onto:GroundFloorArea a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Ground Floor Area" .
+
+# Weather location/EPW carried by the Location (selects the static weather file and,
+# via a live-timeseries reference, the live weather feed).
+dici_onto:WeatherEPW a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute ;
+    rdfs:label "Weather EPW" .
+
+dici_onto:PeakSpaceHeatingPower a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Peak Space Heating Power" .
+
+dici_onto:LumpedHeatCapacity a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Lumped Heat Capacity" .
+
+dici_onto:LumpedHeatResistance a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Lumped Heat Resistance" .
+
+dici_onto:PVRoofCoverageRatio a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "PV Roof Coverage Ratio" .
+
+dici_onto:FootprintArea a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Footprint Area" .
+
+dici_onto:EVCount a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Number of Electric Vehicles" .
+
+dici_onto:OptimizationMonths a owl:Class ;
+    rdfs:subClassOf dici_onto:PhysicalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Optimization Months" .
+
+# Electricity tariff — categorical, with the values the optimizer understands.
+dici_onto:ElectricityTariff a owl:Class ;
+    rdfs:subClassOf dici_onto:CategoricalAttribute, dici_onto:BuildingAttribute ;
+    rdfs:label "Electricity Tariff" .
+
+dici_onto:Flat a owl:Class ;
+    rdfs:subClassOf dici_onto:ElectricityTariff ;
+    rdfs:label "Flat" .
+
+dici_onto:Variable a owl:Class ;
+    rdfs:subClassOf dici_onto:ElectricityTariff ;
+    rdfs:label "Variable" .
+
+dici_onto:Dual a owl:Class ;
+    rdfs:subClassOf dici_onto:ElectricityTariff ;
+    rdfs:label "Dual" .

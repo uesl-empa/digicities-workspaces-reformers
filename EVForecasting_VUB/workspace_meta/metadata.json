@@ -1,0 +1,11 @@
+{
+  "id": "EVForecasting_VUB",
+  "name": "EV Forecasting (VUB)",
+  "description": "Electric-vehicle charging-demand forecasting.",
+  "created": "2026-05-28",
+  "tags": [
+    "forecasting",
+    "ev",
+    "VUB"
+  ]
+}

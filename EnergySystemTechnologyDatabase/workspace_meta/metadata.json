@@ -1,0 +1,7 @@
+{
+  "id": "EnergySystemTechnologyDatabase",
+  "name": "Energy System Technology Database",
+  "description": "Reference catalogue of energy-system equipment specs (historically named MotelDB). Worked example showing the full ingestion pipeline — fill the Excel template, convert to TTL, commit.",
+  "created": "2026-05-28",
+  "tags": ["example", "technology-database"]
+}

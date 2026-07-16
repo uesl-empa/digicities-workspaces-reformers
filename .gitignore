@@ -1,0 +1,19 @@
+# Excel workbooks are user-authored; the canonical record is the
+# converted TTL in ingestion/output/. Track workbooks explicitly per
+# workspace if you want them version-controlled.
+*/ingestion/input/*.xlsx
+
+# Track the example workbook so partners can grab a working reference.
+!EnergySystemTechnologyDatabase/ingestion/input/*.xlsx
+
+# Track the per-workspace bundled copy of the blank ingestion template so a
+# fresh clone gives every partner a ready-to-fill workbook in their input/ dir.
+!*/ingestion/input/data_ingestion_template.xlsx
+
+# Ontology Manager scratch — never the source of truth.
+*/ontology/temp/
+
+# Python / editor noise.
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

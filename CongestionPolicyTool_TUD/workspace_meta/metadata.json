@@ -1,0 +1,11 @@
+{
+  "id": "CongestionPolicyTool_TUD",
+  "name": "Congestion Policy Tool (TU Delft)",
+  "description": "Decision-support tool for grid congestion policy interventions.",
+  "created": "2026-05-28",
+  "tags": [
+    "congestion",
+    "policy",
+    "TUD"
+  ]
+}

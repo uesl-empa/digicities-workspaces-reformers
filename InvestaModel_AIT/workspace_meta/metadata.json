@@ -1,0 +1,11 @@
+{
+  "id": "InvestaModel_AIT",
+  "name": "Investa Model (AIT)",
+  "description": "Investment-optimisation modelling for energy-system assets.",
+  "created": "2026-05-28",
+  "tags": [
+    "investment",
+    "optimisation",
+    "AIT"
+  ]
+}

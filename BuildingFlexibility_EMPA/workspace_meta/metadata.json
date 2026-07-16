@@ -1,0 +1,11 @@
+{
+  "id": "BuildingFlexibility_EMPA",
+  "name": "Building Flexibility (Empa)",
+  "description": "Demand-side flexibility characterisation for buildings.",
+  "created": "2026-05-28",
+  "tags": [
+    "flexibility",
+    "buildings",
+    "EMPA"
+  ]
+}

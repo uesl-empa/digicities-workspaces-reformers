@@ -1,0 +1,11 @@
+{
+  "id": "InvestaScenarios_AIT",
+  "name": "Investa Scenarios (AIT)",
+  "description": "What-if scenario library accompanying the Investa investment model.",
+  "created": "2026-05-28",
+  "tags": [
+    "scenarios",
+    "investment",
+    "AIT"
+  ]
+}
