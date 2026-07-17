@@ -1,13 +1,115 @@
-# Building Flexibility (EMPA) - what-if scenario 'Flexibility - Compact low-demand' for Building 100001.
-# Self-contained and consistent with Scenario Builder output (usedInScenario,
-# sourceType, linkType). Instances are namespaced under the scenario URI so
-# multiple what-if value sets coexist in <http://scenarios> without colliding.
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dici_onto: <https://digicities.info/ontology#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/ComponentLink_1> a dici_onto:ComponentLink ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
+    dici_onto:linkType "scenario_automatic" ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/ComponentLink_2> a dici_onto:ComponentLink ;
+    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> ;
+    dici_onto:linkType "scenario_automatic" ;
+    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001> ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001> a dici_onto:Building ;
+    rdfs:label "Building 100001" ;
+    dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio>,
+        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower> ;
+    dici_onto:hasBuildingEVCountAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount> ;
+    dici_onto:hasBuildingElectricityTariffAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff> ;
+    dici_onto:hasBuildingFootprintAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea> ;
+    dici_onto:hasBuildingGroundFloorAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea> ;
+    dici_onto:hasBuildingLumpedHeatCapacityAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity> ;
+    dici_onto:hasBuildingLumpedHeatResistanceAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance> ;
+    dici_onto:hasBuildingOptimizationMonthsAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths> ;
+    dici_onto:hasBuildingPVRoofCoverageRatioAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio> ;
+    dici_onto:hasBuildingPeakSpaceHeatingPowerAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower> ;
+    dici_onto:sourceType "scenario" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount> a dici_onto:EVCount,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:COUNT ;
+    qudt:value 0.0 ;
+    dici_onto:hasUnitLabel "COUNT"^^xsd:string ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff> a dici_onto:CategoricalAttribute,
+        dici_onto:ElectricityTariff,
+        dici_onto:Flat ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea> a dici_onto:FootprintArea,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:M2 ;
+    qudt:value 40.0 ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea> a dici_onto:GroundFloorArea,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:M2 ;
+    qudt:value 120.0 ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity> a dici_onto:LumpedHeatCapacity,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:MegaJ-PER-K ;
+    qudt:value 30.0 ;
+    dici_onto:hasUnitLabel "MegaJ-PER-K"^^xsd:string ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance> a dici_onto:LumpedHeatResistance,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:K-PER-W ;
+    qudt:value 0.6 ;
+    dici_onto:hasUnitLabel "K-PER-W"^^xsd:string ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths> a dici_onto:OptimizationMonths,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:MO ;
+    qudt:value 4.0 ;
+    dici_onto:hasUnitLabel "MO"^^xsd:string ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio> a dici_onto:PVRoofCoverageRatio,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:FRACTION ;
+    qudt:value 0.1 ;
+    dici_onto:hasUnitLabel "FRACTION"^^xsd:string ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower> a dici_onto:PeakSpaceHeatingPower,
+        dici_onto:PhysicalAttribute ;
+    qudt:unit unit:KiloW ;
+    qudt:value 6.0 ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> a dici_onto:Location ;
+    rdfs:label "EMPA Campus" ;
+    dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> ;
+    dici_onto:hasLocationWeatherEPWAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> ;
+    dici_onto:sourceType "scenario" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:ResourceAttribute,
+        dici_onto:WeatherEPW ;
+    dici_onto:hasDataPath "fribourg"^^xsd:string ;
+    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" ;
+    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
 
 <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> a dici_onto:Scenario ;
     rdfs:label "Flexibility - Compact low-demand" ;
@@ -15,78 +117,3 @@
     dici_onto:builtForService "FlexibilityOptimizer" ;
     dici_onto:createdInWorkspace "BuildingFlexibility_EMPA" .
 
-# --- Location (static weather location) ---
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> a dici_onto:Location ;
-    rdfs:label "EMPA Campus" ;
-    dici_onto:sourceType "scenario" ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> ;
-    dici_onto:hasLocationWeatherEPWAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:WeatherEPW, dici_onto:PhysicalAttribute, dici_onto:DynamicAttribute ;
-    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "fribourg" .
-
-# --- Building 100001 ---
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001> a dici_onto:Building ;
-    rdfs:label "Building 100001" ;
-    dici_onto:sourceType "scenario" ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    dici_onto:hasAttribute
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths>,
-        <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff> ;
-    dici_onto:hasBuildingGroundFloorAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea> ;
-    dici_onto:hasBuildingFootprintAreaAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea> ;
-    dici_onto:hasBuildingPeakSpaceHeatingPowerAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower> ;
-    dici_onto:hasBuildingLumpedHeatCapacityAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity> ;
-    dici_onto:hasBuildingLumpedHeatResistanceAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance> ;
-    dici_onto:hasBuildingPVRoofCoverageRatioAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio> ;
-    dici_onto:hasBuildingEVCountAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount> ;
-    dici_onto:hasBuildingOptimizationMonthsAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths> ;
-    dici_onto:hasBuildingElectricityTariffAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff> .
-
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/GroundFloorArea> a dici_onto:GroundFloorArea, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "120.0"^^xsd:decimal ; qudt:unit unit:M2 .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/FootprintArea> a dici_onto:FootprintArea, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "40.0"^^xsd:decimal ; qudt:unit unit:M2 .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PeakSpaceHeatingPower> a dici_onto:PeakSpaceHeatingPower, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "6.0"^^xsd:decimal ; qudt:unit unit:KiloW .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatCapacity> a dici_onto:LumpedHeatCapacity, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "30.0"^^xsd:decimal .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/LumpedHeatResistance> a dici_onto:LumpedHeatResistance, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "0.6"^^xsd:decimal .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/PVRoofCoverageRatio> a dici_onto:PVRoofCoverageRatio, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "0.1"^^xsd:decimal .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/EVCount> a dici_onto:EVCount, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "0"^^xsd:decimal .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/OptimizationMonths> a dici_onto:OptimizationMonths, dici_onto:PhysicalAttribute ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    qudt:value "4"^^xsd:decimal .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001/ElectricityTariff> a dici_onto:ElectricityTariff, dici_onto:CategoricalAttribute, dici_onto:Flat ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> .
-
-# --- Component links: Scenario -> Location -> Building ---
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/ComponentLink_1> a dici_onto:ComponentLink ;
-    dici_onto:linkType "scenario_automatic" ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> .
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/ComponentLink_2> a dici_onto:ComponentLink ;
-    dici_onto:linkType "scenario_automatic" ;
-    dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario> ;
-    dici_onto:hasInputEntity <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Location/EmpaCampus> ;
-    dici_onto:linksInputyEntityTo <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexCompactScenario/Building/100001> .
