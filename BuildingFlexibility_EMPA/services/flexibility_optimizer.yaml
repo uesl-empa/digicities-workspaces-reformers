@@ -10,6 +10,14 @@
 # defaults for anything missing, so a partial building still optimizes.
 service_name: FlexibilityOptimizer
 description: Single-building flexibility optimization (REFORMERS RDP). Returns cost, energy and temperature results per building.
+# Where the service listens: the runtime service on the RDP stack, through its
+# flexibility-adapter. Override FLEX_SERVICE_URL to use another endpoint.
+connection:
+  transport: http
+  url: ${FLEX_SERVICE_URL:-http://host.docker.internal:8090/run}
+  method: POST
+  auth_type: none
+  timeout: 300
 scenario_data:
   uri: Scenario.URI
   name: Scenario.label
