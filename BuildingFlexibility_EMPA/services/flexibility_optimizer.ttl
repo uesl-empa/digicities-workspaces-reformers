@@ -1,0 +1,302 @@
+@prefix dici_onto: <https://digicities.info/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dici_onto:atStreamAddress a owl:DatatypeProperty .
+
+dici_onto:hasResultField a owl:DatatypeProperty .
+
+dici_onto:identifiedByField a owl:DatatypeProperty .
+
+dici_onto:isProvidedBy a owl:ObjectProperty .
+
+dici_onto:providesOutputAttribute a owl:ObjectProperty .
+
+dici_onto:providesOutputEntity a owl:ObjectProperty .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_1> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.GridImportEnergy provided"@en ;
+    dici_onto:hasResultField "months.summary.grid_import_kwh" ;
+    dici_onto:hasUnitLabel "KiloW-HR" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:GridImportEnergy ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_10> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.EVDischargePower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_ev_discharge" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:EVDischargePower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_11> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.SpaceHeatingPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_sh" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:SpaceHeatingPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_12> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.HotWaterPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_dhw" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:HotWaterPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_13> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.PVPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_pv" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:PVPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_14> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.PlugLoadPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "plug_load" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:PlugLoadPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_15> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.IndoorTemperature provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "building_temp" ;
+    dici_onto:hasUnitLabel "DEG_C" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:IndoorTemperature ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_16> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.HotWaterTemperature provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "water_temp" ;
+    dici_onto:hasUnitLabel "DEG_C" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:HotWaterTemperature ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_17> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.OutdoorTemperature provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "temp_outside" ;
+    dici_onto:hasUnitLabel "DEG_C" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:OutdoorTemperature ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_18> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.BatteryStateOfCharge provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "ebat_soc" ;
+    dici_onto:hasUnitLabel "FRACTION" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:BatteryStateOfCharge ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_19> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.EVStateOfCharge provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "ev_soc" ;
+    dici_onto:hasUnitLabel "FRACTION" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:EVStateOfCharge ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_2> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.GridExportEnergy provided"@en ;
+    dici_onto:hasResultField "months.summary.grid_export_kwh" ;
+    dici_onto:hasUnitLabel "KiloW-HR" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:GridExportEnergy ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_20> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.ElectricityPrice provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "el_tariff" ;
+    dici_onto:hasUnitLabel "KiloW-HR" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:ElectricityPrice ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_21> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.FeedInPrice provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "feed_in_tariff" ;
+    dici_onto:hasUnitLabel "KiloW-HR" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:FeedInPrice ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_22> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.ElectricityCost provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "electricity_cost" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:ElectricityCost ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_3> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.PVGenerationEnergy provided"@en ;
+    dici_onto:hasResultField "months.summary.pv_generation_kwh" ;
+    dici_onto:hasUnitLabel "KiloW-HR" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:PVGenerationEnergy ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_4> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.ElectricityCost provided"@en ;
+    dici_onto:hasResultField "months.costs.power_transfers" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:ElectricityCost ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_5> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.GridImportPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_g2b" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:GridImportPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_6> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.GridExportPower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_b2g" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:GridExportPower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_7> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.BatteryChargePower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_ebat_charge" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:BatteryChargePower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_8> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.BatteryDischargePower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_ebat_discharge" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:BatteryDischargePower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/out_9> a dici_onto:ComponentAttributeOutput ;
+    rdfs:label "Building.EVChargePower provided"@en ;
+    dici_onto:atStreamAddress "flexibility.schedules" ;
+    dici_onto:hasResultField "power_ev_charge" ;
+    dici_onto:hasUnitLabel "KiloW" ;
+    dici_onto:identifiedByField "uri" ;
+    dici_onto:isProvidedBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> ;
+    dici_onto:providesOutputAttribute dici_onto:EVChargePower ;
+    dici_onto:providesOutputEntity dici_onto:Building .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_1> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Location.WeatherEPW required"@en ;
+    dici_onto:hasInputAttribute dici_onto:WeatherEPW ;
+    dici_onto:hasInputEntity dici_onto:Location ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_10> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.OptimizationMonths required"@en ;
+    dici_onto:hasInputAttribute dici_onto:OptimizationMonths ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_11> a dici_onto:ComponentComponentRequirement ;
+    rdfs:label "Location linked to Building"@en ;
+    dici_onto:hasInputEntity dici_onto:Building,
+        dici_onto:Location ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_2> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.GroundFloorArea required"@en ;
+    dici_onto:hasInputAttribute dici_onto:GroundFloorArea ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_3> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.FootprintArea required"@en ;
+    dici_onto:hasInputAttribute dici_onto:FootprintArea ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_4> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.PeakSpaceHeatingPower required"@en ;
+    dici_onto:hasInputAttribute dici_onto:PeakSpaceHeatingPower ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_5> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.LumpedHeatCapacity required"@en ;
+    dici_onto:hasInputAttribute dici_onto:LumpedHeatCapacity ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_6> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.LumpedHeatResistance required"@en ;
+    dici_onto:hasInputAttribute dici_onto:LumpedHeatResistance ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_7> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.PVRoofCoverageRatio required"@en ;
+    dici_onto:hasInputAttribute dici_onto:PVRoofCoverageRatio ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_8> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.EVCount required"@en ;
+    dici_onto:hasInputAttribute dici_onto:EVCount ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/req_9> a dici_onto:ComponentAttributeRequirement ;
+    rdfs:label "Building.ElectricityTariff required"@en ;
+    dici_onto:hasInputAttribute dici_onto:ElectricityTariff ;
+    dici_onto:hasInputEntity dici_onto:Building ;
+    dici_onto:isRequiredBy <https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> .
+
+dici_onto:ComponentAttributeOutput a owl:Class ;
+    rdfs:comment "This service PRODUCES this attribute of this component type (workspace-extension vocabulary, pending core promotion)"@en .
+
+<https://digicities.info/proj/BuildingFlexibility_EMPA/services/FlexibilityOptimizer> a dici_onto:Service ;
+    rdfs:label "FlexibilityOptimizer"@en .
+

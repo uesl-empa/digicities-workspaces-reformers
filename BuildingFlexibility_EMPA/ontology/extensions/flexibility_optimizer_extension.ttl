@@ -121,3 +121,152 @@ dici_onto:BuildingAttribute a owl:Class ;
 <http://qudt.org/vocab/unit/KiloW-PER-K> a qudt:Unit ;
     rdfs:label "kilowatt per kelvin" ;
     rdfs:comment "Thermal conductance (heat loss coefficient): 1 kW/K = 1000 W/K."@en .
+
+# What the optimizer returns. Series on the schedule stream, totals in the response.
+# Each result belongs to a Building: see `outputs` in services/flexibility_optimizer.yaml.
+
+dici_onto:GridImportPower a owl:Class ;
+    rdfs:label "Grid Import Power" ;
+    rdfs:comment "Power drawn from the grid over a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:GridExportPower a owl:Class ;
+    rdfs:label "Grid Export Power" ;
+    rdfs:comment "Power fed into the grid over a time step of a plan, negative by the model's sign convention."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:BatteryChargePower a owl:Class ;
+    rdfs:label "Battery Charge Power" ;
+    rdfs:comment "Power charging the home battery over a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:BatteryDischargePower a owl:Class ;
+    rdfs:label "Battery Discharge Power" ;
+    rdfs:comment "Power discharged from the home battery over a time step of a plan, negative by the model's sign convention."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:EVChargePower a owl:Class ;
+    rdfs:label "EV Charge Power" ;
+    rdfs:comment "Power charging electric vehicles over a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:EVDischargePower a owl:Class ;
+    rdfs:label "EV Discharge Power" ;
+    rdfs:comment "Power discharged from electric vehicles over a time step of a plan, negative by the model's sign convention."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:SpaceHeatingPower a owl:Class ;
+    rdfs:label "Space Heating Power" ;
+    rdfs:comment "Electrical power of the heat pump for space heating over a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:HotWaterPower a owl:Class ;
+    rdfs:label "Hot Water Power" ;
+    rdfs:comment "Electrical power of the heat pump for hot water over a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:PVPower a owl:Class ;
+    rdfs:label "PV Power" ;
+    rdfs:comment "The PV generation a plan assumed, negative by the model's sign convention."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:PlugLoadPower a owl:Class ;
+    rdfs:label "Plug Load Power" ;
+    rdfs:comment "The plug loads a plan assumed."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW> .
+
+dici_onto:IndoorTemperature a owl:Class ;
+    rdfs:label "Indoor Temperature" ;
+    rdfs:comment "Modelled indoor temperature at the start of a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/DEG_C> .
+
+dici_onto:HotWaterTemperature a owl:Class ;
+    rdfs:label "Hot Water Temperature" ;
+    rdfs:comment "Modelled hot water temperature at the start of a time step of a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/DEG_C> .
+
+dici_onto:OutdoorTemperature a owl:Class ;
+    rdfs:label "Outdoor Temperature" ;
+    rdfs:comment "The outdoor temperature a plan assumed."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/DEG_C> .
+
+dici_onto:BatteryStateOfCharge a owl:Class ;
+    rdfs:label "Battery State of Charge" ;
+    rdfs:comment "Modelled state of charge of the home battery at the start of a time step of a plan, as a fraction."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:StateOfCharge,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/FRACTION> .
+
+dici_onto:EVStateOfCharge a owl:Class ;
+    rdfs:label "EV State of Charge" ;
+    rdfs:comment "Modelled state of charge of electric vehicles at the start of a time step of a plan, as a fraction."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:StateOfCharge,
+        dici_onto:DynamicAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/FRACTION> .
+
+dici_onto:GridImportEnergy a owl:Class ;
+    rdfs:label "Grid Import Energy" ;
+    rdfs:comment "Energy drawn from the grid over a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:PhysicalAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW-HR> .
+
+dici_onto:GridExportEnergy a owl:Class ;
+    rdfs:label "Grid Export Energy" ;
+    rdfs:comment "Energy fed into the grid over a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:PhysicalAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW-HR> .
+
+dici_onto:PVGenerationEnergy a owl:Class ;
+    rdfs:label "PV Generation Energy" ;
+    rdfs:comment "PV energy generated over a plan."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:PhysicalAttribute ;
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW-HR> .
+
+dici_onto:ElectricityPrice a owl:Class ;
+    rdfs:label "Electricity Price" ;
+    rdfs:comment "The price of imported electricity a plan assumed, in CHF per kWh."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:UnitBasedCostAttribute .
+
+dici_onto:FeedInPrice a owl:Class ;
+    rdfs:label "Feed-in Price" ;
+    rdfs:comment "The price of exported electricity a plan assumed, in CHF per kWh."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:UnitBasedCostAttribute .
+
+dici_onto:ElectricityCost a owl:Class ;
+    rdfs:label "Electricity Cost" ;
+    rdfs:comment "Cost of imported minus exported electricity, in CHF: per time step on the schedule stream, over the plan in the response."@en ;
+    rdfs:subClassOf dici_onto:BuildingAttribute,
+        dici_onto:SimpleCostAttribute .
