@@ -105,7 +105,7 @@
     dici_onto:sourceType "scenario" ;
     dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexColdWinterScenario> .
 
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexColdWinterScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:ResourceAttribute,
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexColdWinterScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:DataPathAttribute,
         dici_onto:WeatherEPW ;
     dici_onto:hasDataPath "fribourg"^^xsd:string ;
     dici_onto:hasLiveTimeSeriesReference "weather.forecasts.openmeteo.Alkmaar" ;
