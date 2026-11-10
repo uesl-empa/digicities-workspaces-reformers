@@ -60,15 +60,15 @@
 
 <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatCapacity> a dici_onto:LumpedHeatCapacity,
         dici_onto:PhysicalAttribute ;
-    qudt:unit unit:MegaJ-PER-K ;
+    qudt:unit unit:KiloW-HR-PER-K ;
     qudt:value 50.0 ;
-    dici_onto:hasUnitLabel "MegaJ-PER-K"^^xsd:string .
+    dici_onto:hasUnitLabel "KiloW-HR-PER-K"^^xsd:string .
 
 <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/LumpedHeatResistance> a dici_onto:LumpedHeatResistance,
         dici_onto:PhysicalAttribute ;
-    qudt:unit unit:K-PER-W ;
+    qudt:unit unit:KiloW-PER-K ;
     qudt:value 0.5 ;
-    dici_onto:hasUnitLabel "K-PER-W"^^xsd:string .
+    dici_onto:hasUnitLabel "KiloW-PER-K"^^xsd:string .
 
 <https://digicities.info/proj/BuildingFlexibility_EMPA/Building/100001/OptimizationMonths> a dici_onto:OptimizationMonths,
         dici_onto:PhysicalAttribute ;

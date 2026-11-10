@@ -1,5 +1,6 @@
 @prefix dici_onto: <https://digicities.info/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 dici_onto:Building a owl:Class ;
@@ -34,15 +35,17 @@ dici_onto:GroundFloorArea a owl:Class ;
 
 dici_onto:LumpedHeatCapacity a owl:Class ;
     rdfs:label "Lumped Heat Capacity" ;
+    rdfs:comment "Thermal heat capacity of the building, in kWh per K: the optimizer's heat_capacity_sh (the building register's CBLD)."@en ;
     rdfs:subClassOf dici_onto:BuildingAttribute,
         dici_onto:PhysicalAttribute ;
-    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/MegaJ-PER-K> .
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW-HR-PER-K> .
 
 dici_onto:LumpedHeatResistance a owl:Class ;
     rdfs:label "Lumped Heat Resistance" ;
+    rdfs:comment "Heat loss coefficient of the building, in kW per K: the optimizer's heat_resistance_sh (the building register's HBLD). Despite the name it is a conductance, not a resistance."@en ;
     rdfs:subClassOf dici_onto:BuildingAttribute,
         dici_onto:PhysicalAttribute ;
-    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/K-PER-W> .
+    dici_onto:hasDefaultUnit <http://qudt.org/vocab/unit/KiloW-PER-K> .
 
 dici_onto:OptimizationMonths a owl:Class ;
     rdfs:label "Optimization Months" ;
@@ -107,3 +110,14 @@ dici_onto:BuildingAttribute a owl:Class ;
     rdfs:label "Building Attribute" ;
     rdfs:subClassOf dici_onto:Attribute .
 
+# Units the optimizer works in that the pinned QUDT release has no code for.
+# Declared here, as the platform's add_custom_unit does, so values say what they
+# are. The platform has no conversion factors for them: a registration that asks
+# for another unit is refused rather than sent a wrong number.
+<http://qudt.org/vocab/unit/KiloW-HR-PER-K> a qudt:Unit ;
+    rdfs:label "kilowatt hour per kelvin" ;
+    rdfs:comment "Heat capacity: 1 kWh/K = 3.6 MJ/K."@en .
+
+<http://qudt.org/vocab/unit/KiloW-PER-K> a qudt:Unit ;
+    rdfs:label "kilowatt per kelvin" ;
+    rdfs:comment "Thermal conductance (heat loss coefficient): 1 kW/K = 1000 W/K."@en .
