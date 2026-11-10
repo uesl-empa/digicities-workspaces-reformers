@@ -79,7 +79,7 @@
     qudt:unit unit:KiloW ;
     qudt:value 10.0 .
 
-<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> a dici_onto:ResourceAttribute,
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> a dici_onto:DataPathAttribute,
         dici_onto:WeatherEPW ;
     dici_onto:hasDataPath "fribourg"^^xsd:string .
 

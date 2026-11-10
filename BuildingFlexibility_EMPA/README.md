@@ -54,10 +54,12 @@ The exact steps:
    optimal result back (cost, grid energy, temperatures per building).
 
 **Weather.** The Location's `WeatherEPW` carries
-`dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA"`, so the optimizer
-uses live temperature from that Redis stream **if a weather publisher is running**;
-otherwise it falls back to a static file selected by `weather_location` (e.g.
-`fribourg`). met.no provides temperature only — solar always comes from the static file.
+`dici_onto:hasLiveTimeSeriesReference "weather.forecasts.openmeteo.Alkmaar"`, so the
+optimizer plans the coming 24 hours from that forecast, temperature and irradiance by
+their timestamps, **if the data crawler is publishing it**; otherwise it plans a
+representative day from a static file selected by `weather_location` (e.g. `fribourg`),
+and the result says why. The building here is a demonstration: its weather is Alkmaar's,
+but its data is not from Alkmaar.
 
 **Redis transport (alternative).** Instead of the HTTP adapter you can register
 transport **redis** (streams `flexibility.requests` / `flexibility.results`); the

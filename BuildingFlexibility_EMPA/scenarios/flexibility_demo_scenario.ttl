@@ -92,8 +92,8 @@
     dici_onto:hasAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> ;
     dici_onto:hasLocationWeatherEPWAttribute <https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> .
 
-<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> a dici_onto:ResourceAttribute,
+<https://digicities.info/proj/BuildingFlexibility_EMPA/Location/EmpaCampus/WeatherEPW> a dici_onto:DataPathAttribute,
         dici_onto:WeatherEPW ;
     dici_onto:hasDataPath "fribourg"^^xsd:string ;
-    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" .
+    dici_onto:hasLiveTimeSeriesReference "weather.forecasts.openmeteo.Alkmaar" .
 

@@ -105,10 +105,10 @@
     dici_onto:sourceType "scenario" ;
     dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> .
 
-<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:ResourceAttribute,
+<https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario/Location/EmpaCampus/WeatherEPW> a dici_onto:DataPathAttribute,
         dici_onto:WeatherEPW ;
     dici_onto:hasDataPath "fribourg"^^xsd:string ;
-    dici_onto:hasLiveTimeSeriesReference "forecasts.met-no.VIENNA" ;
+    dici_onto:hasLiveTimeSeriesReference "weather.forecasts.openmeteo.Alkmaar" ;
     dici_onto:usedInScenario <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> .
 
 <https://digicities.info/proj/BuildingFlexibility_EMPA/FlexHighPVScenario> a dici_onto:Scenario ;
